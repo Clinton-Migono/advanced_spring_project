@@ -1,8 +1,8 @@
--- CREATE DATABASE job_search_db;
+CREATE DATABASE IF NOT EXISTS job_search;
 
-USE job_search_db;
+USE job_search;
 
-CREATE TABLE job_table (
+CREATE TABLE IF NOT EXISTS job_table(
     job_id INT AUTO_INCREMENT PRIMARY KEY,
     job_title VARCHAR(255),
     job_type VARCHAR(100),
